@@ -1,0 +1,19 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ClientMaster.master" AutoEventWireup="true" CodeFile="DoctorDetail.aspx.cs" Inherits="_Default" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="cphClientMaster" Runat="Server">
+<table border="2" bgcolor="White">
+<tr><td style="font-family: 'Arial Black'; font-size: 30px" align="center" colspan="3">Doctor Details</td></tr>
+<tr><td ><b>Doctor Name</b></td>
+<td><asp:TextBox runat="server" ID="txtName" /></td>
+<td><asp:Button runat="server" ID="btnShow" Text="Show" onclick="btnShow_Click" /></td>
+</tr>
+<tr><td colspan="3">
+<div style="border-style:none; width:500px; height:200px; overflow:scroll">
+<asp:DataGrid runat="server" ID="dgvdoctorDetail" 
+        Font-Size="Large"  /></div>
+</td></tr>
+<tr><td  align="center" colspan="3"><asp:Button runat="server" ID="btnBack" Text="Back" 
+        Font-Bold="true" onclick="btnBack_Click"/></td></tr>
+</table>
+</asp:Content>
+

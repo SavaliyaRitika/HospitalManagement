@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MainMaster.master.cs" Inherits="MainMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Matushri Santokbaa Medical Centre</title>
+   
+</head>
+<body >
+    <form id="form1" runat="server">
+    <div style="background-image: url('photos/Mainmaster.jpg'); height: 640px; width: 1200px">
+         <table>
+    <tr height="50px" align="left">
+    <td style="font-size: 60px">
+    
+       <asp:Label runat="server" ID="lblHMS"  Text="Hospital Management System" 
+             ForeColor="#000066" Font-Bold="True" 
+            Font-Italic="True" />
+    </td>
+    </tr>
+    <tr height="50px">
+    <td align="left">
+    <table><tr>
+     <td>   <asp:Button ID="btbHome" runat="server" Text="Home" Width="120px"  Height="25px"
+            Font-Bold="true" onclick="btbHome_Click" Font-Size="Medium"/></td><td width="10px"></td>
+      <td>  <asp:Button ID="btnHospital" runat="server" Text="Hospital" Width="120px"  Height="25px" 
+            Font-Bold="true" onclick="btnHospital_Click" Font-Size="Medium"/></td><td width="10px"></td>
+     <td>   <asp:Button ID="btnFacility" runat="server" Text="Facilities" Width="120px"  Height="25px"
+            Font-Bold="true" onclick="btnFacility_Click" Font-Size="Medium"/></td><td width="10px"></td>
+      <td>  <asp:Button ID="btnContactus" runat="server" Text="ContactUs" Width="120px"  Height="25px"
+            Font-Bold="true" onclick="btnContactus_Click" Font-Size="Medium"/></td><td width="10px"></td>
+      <td>  <asp:Button ID="btnAboutus" runat="server" Text="AboutUs" Width="120px"  Height="25px"
+            Font-Bold="true" onclick="btnAboutus_Click"  Font-Size="Medium" /></td>
+     </tr> </table>
+    </td>
+    </tr>
+    <tr>
+    <td  width="1200px">
+        <asp:ContentPlaceHolder id="cphMainMaster" runat="server">
+        
+        </asp:ContentPlaceHolder>
+         </td>
+        </tr>
+      </table>
+     
+    </div>
+    </form>
+</body>
+</html>

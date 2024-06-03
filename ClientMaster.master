@@ -1,0 +1,76 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="ClientMaster.master.cs" Inherits="ClientMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Matushri Santokbaa Medical Centre</title>
+   
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="background-image: url('photos/Clientmaster.jpg'); width: 1200px; height: 640px">
+       <table style="width: 1200px">
+    <tr >
+    <td colspan="2" style="font-size: 60px">
+     <asp:Label runat="server" ID="lblHMS"  Text="Matushri Santokbaa Medical Centre" 
+             ForeColor="#000066" Font-Bold="True" 
+            Font-Italic="True" />
+    </td>
+    </tr>
+    <tr>
+    <td style="width: 200px">
+        <table>
+        <tr style="height: 20px"><td></td></tr>
+        <tr><td><asp:Button ID="btbHome" runat="server" Text="Home" Width="175px"  
+                Font-Bold="true" Height="35px" Font-Size="Medium" 
+                onclick="btbHome_Click"/></td></tr>
+        <tr style="height: 20px"><td></td></tr>
+       <tr><td><asp:Button ID="btnPatientRegistration" runat="server" 
+               Text="Patient Registration" Width="175px"  
+                Font-Bold="true" Height="35px" Font-Size="Medium" 
+               onclick="btnPatientRegistration_Click"/></td></tr>
+        <tr style="height: 20px"><td></td></tr>
+        <tr><td>
+            <asp:Button ID="btnMedicine" runat="server" Text="Medicine Detail" Width="175px"  
+                Font-Bold="true" Height="35px" Font-Size="Medium" onclick="btnMedicine_Click1" 
+                /></td></tr>
+        <tr style="height: 20px"><td></td></tr>
+        <tr><td><asp:Button ID="btnDoctor" runat="server" Text="Doctor Detail" Width="175px"  
+                Font-Bold="true" Height="35px" Font-Size="Medium" 
+                onclick="btnDoctor_Click1"/></td></tr>
+        <tr style="height: 20px"><td></td></tr>
+        <tr><td><asp:Button ID="btnContactUs" runat="server" Text="ContactUs" Width="175px"  
+                Font-Bold="true" Height="35px" Font-Size="Medium" 
+                onclick="btnContactUs_Click"/></td></tr>
+        <tr style="height: 20px"><td></td></tr>
+        <tr><td><asp:Button ID="btnAboutUs" runat="server" Text="AboutUs" Width="175px"  
+                Font-Bold="true" Height="35px" Font-Size="Medium" 
+                onclick="btnAboutUs_Click"/></td></tr>
+        <tr style="height: 20px"><td></td></tr>
+        <tr><td><asp:Button ID="btnFeedback" runat="server" Text="Feedback" Width="175px"  
+                Font-Bold="true" Height="35px" Font-Size="Medium" 
+                onclick="btnFeedback_Click"/></td></tr>
+        <tr style="height: 20px"><td></td></tr>
+        <tr><td><asp:Button ID="btnLogOut" runat="server" Text="LogOut" Width="175px"  
+                Font-Bold="true" Height="35px" Font-Size="Medium" 
+                onclick="btnLogOut_Click"/></td></tr>
+        <tr style="height: 20px"><td></td></tr>
+
+        </table>
+        
+        
+   </td>
+    <td style="width: 1000px">
+  
+   
+        <asp:ContentPlaceHolder id="cphClientMaster" runat="server">
+        
+        </asp:ContentPlaceHolder>
+       </td>
+     </tr>
+    </table>
+    </div>
+    </form>
+</body>
+</html>

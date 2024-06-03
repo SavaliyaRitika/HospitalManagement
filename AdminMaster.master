@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMaster.master.cs" Inherits="AdminMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Matushri Santokbaa Medical Centre</title>
+
+</head>
+<body  >
+    <form id="form1" runat="server">
+    <div style="background-image: url('photos/Adminmaster.jpg'); width: 1200px; height: 640px"  >
+     <table style="width: 1200px">
+    <tr >
+    <td colspan="2" style="font-size: 60px">
+     <asp:Label runat="server" ID="lblHMS"  Text="Matushri Santokbaa Medical Centre-Lathi" 
+             ForeColor="#000066" Font-Bold="True" 
+            Font-Italic="True" />
+    </td>
+    </tr>
+    <tr>
+    <td style="width: 200px">
+        <table>
+        <tr><td><asp:Button ID="btbHome" runat="server" Text="Home" Width="175px"  
+                Font-Bold="true" Height="30px" Font-Size="Medium" onclick="btbHome_Click"/></td></tr>
+        <tr style="height: 15px"><td></td></tr>
+        <tr><td><asp:Button ID="btnUsermaster" runat="server" Text="UserMaster" 
+                Width="175px"  Font-Bold="true"  Height="30px" Font-Size="Medium" 
+                onclick="btnUsermaster_Click"/></td></tr>
+        <tr style="height: 15px"><td></td></tr>
+        <tr><td><asp:Button ID="btnDoctormaster" runat="server" Text="DoctorMaster" 
+                Width="175px"  Font-Bold="true"  Height="30px" Font-Size="Medium" 
+                onclick="btnDoctormaster_Click"/></td></tr>
+        <tr style="height: 15px"><td></td></tr>
+        <tr><td><asp:Button ID="btnInPatientmaster" runat="server" Text="In-PatientMaster" 
+                Width="175px"  Font-Bold="true"  Height="30px" Font-Size="Medium" 
+                onclick="btnInPatientmaster_Click"/></td></tr>
+        <tr style="height: 15px"><td></td></tr>
+        <tr><td><asp:Button ID="btnOutPatientmaster" runat="server" 
+                Text="Out-PatientMaster" Width="175px"  Font-Bold="true"  Height="30px" 
+                Font-Size="Medium" onclick="btnOutPatientmaster_Click"/></td></tr>
+        <tr style="height: 15px"><td></td></tr>
+        <tr><td><asp:Button ID="btnWardmaster" runat="server" Text="WardMaster" 
+                Width="175px"  Font-Bold="true"  Height="30px" Font-Size="Medium" 
+                onclick="btnWardmaster_Click"/></td></tr>
+        <tr style="height: 15px"><td></td></tr>
+        <tr><td><asp:Button ID="btnMedicinemaster" runat="server" Text="MedicineMaster" 
+                Width="175px"  Font-Bold="true"  Height="30px" Font-Size="Medium" 
+                onclick="btnMedicinemaster_Click"/></td></tr>
+        <tr style="height: 15px"><td></td></tr>
+        <tr><td><asp:Button ID="btnDischargemaster" runat="server" Text="DischargeMaster" 
+                Width="175px"  Font-Bold="true"  Height="30px" Font-Size="Medium" 
+                onclick="btnDischargemaster_Click" /></td></tr>
+        <tr style="height: 15px"><td></td></tr>
+        <tr><td>
+            <asp:Button ID="btnFeedback" runat="server" Text="Feedback" Width="175px" 
+         Font-Bold="true"  Height="30px" Font-Size="Medium" onclick="btnFeedback_Click"/></td></tr>
+        <tr style="height: 15px"><td></td></tr>
+        <tr><td>
+            <asp:Button ID="btnReports" runat="server" Text="Reports" Width="175px" 
+         Font-Bold="true" Height="30px" Font-Size="Medium" onclick="btnReports_Click1" /></td></tr>
+        <tr style="height: 15px"><td></td></tr>
+        <tr><td><asp:Button ID="btnLogOut" runat="server" Text="LogOut" Width="175px"  
+                Font-Bold="true"  Height="35px" Font-Size="Medium" onclick="btnLogOut_Click"/></td></tr>
+
+        </table>
+        
+        
+   </td>
+    <td style="width: 1000px">
+  
+   
+        <asp:ContentPlaceHolder id="cpmAdminMaster" runat="server">
+        </asp:ContentPlaceHolder>
+       </td>
+     </tr>
+    </table>
+    
+    </div>
+    </form>
+</body>
+</html>
